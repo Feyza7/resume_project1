@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feyzanur Özbek - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+    <button class="theme-toggle" onclick="toggleTheme()">🌜/🌞</button>
+
+    <div class="sidebar" id="sidebar">
+        <img src="feyza.jpg" alt="feyza's photo">
+        <h2>Feyzanur Özbek</h2>
+        <a onclick="showTab('about')"><i class="fas fa-user"></i>About Me</a>
+        <a onclick="showTab('education')"><i class="fas fa-graduation-cap"></i>Education</a>
+        <a onclick="showTab('skills')"><i class="fas fa-code"></i>Skills</a>
+        <a onclick="showTab('projects')"><i class="fas fa-folder-open"></i>Projects</a>
+        <a onclick="showTab('contact')"><i class="fas fa-envelope"></i>Contact</a>
+    </div>
+
+    <div class="content">
+        <div id="about" class="tab-content active">
+            <h2>About Me</h2>
+            <p>Hello! I'm a Computer Engineering student. I’m interested in web development, database systems, and
+                software architectures.</p>
+        </div>
+
+        <div id="education" class="tab-content">
+            <h2>Education</h2>
+            <ul>
+                <li>Computer Engineering - Karabuk University</li>
+            </ul>
+        </div>
+
+        <div id="skills" class="tab-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>PHP & MySQL</li>
+            </ul>
+        </div>
+
+        <div id="projects" class="tab-content">
+            <h2>Projeler</h2>
+            <ul>
+                <li>Library Management System (PHP + MySQL)</li>
+                <li>Database Project (HTML, CSS, JS)</li>
+            </ul>
+        </div>
+
+        <div id="contact" class="tab-content">
+            <h2>Contact</h2>
+            <p>Email: feyzaozbek@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/feyza-özbek-b957ab335" target="_blank">Profilim</a></p>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
